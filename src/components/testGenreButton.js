@@ -9,7 +9,7 @@ import React from "react";
 
 function GenreButton(props) {
   // let musicButtons = ["Techno", "Classic", "Jazz"];
-  return <button onClick={() => props.action()}>{props.musicButtons}</button>;
+  return <button onClick={() => props.action()}>{props.musicButtonsTitle}</button>;
 
   // function WelcomeMessage(props) {
   //   return (
