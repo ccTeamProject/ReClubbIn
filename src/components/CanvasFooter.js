@@ -1,10 +1,24 @@
 import React from 'react';
 import SubstanceButton from './SubstanceButton';
+import {useState} from 'react';
+
+
 
 const CanvasFooter = () => {
+
+const [state, setstate] = useState(0)
+
+    const addDrinks  = () => {
+        
+        setstate(state + 1)
+    
+    };
+
+
     return (
         <div className='canvas-footer'>
-            <SubstanceButton substanceName='Beer'/>
+            {state}
+            <SubstanceButton substanceName='Beer' addDrinks={addDrinks}/>
             <SubstanceButton substanceName='Tea'/>
             <SubstanceButton substanceName='Smiley'/>
         </div>
