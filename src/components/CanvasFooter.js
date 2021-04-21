@@ -1,30 +1,31 @@
 import React from 'react';
-import SubstanceButton from './SubstanceButton';
+import BeerButton from './BeerButton';
+import TeaButton from './TeaButton';
+import SmileyButton from './SmileyButton';
 import {useState} from 'react';
 
 
 
 const CanvasFooter = () => {
 
+    const beer = false;
+
 const [state, setstate] = useState(false)
 
     const haveBeer  = () => {
         
         setstate(!state)
-    
-    };
-
-
-    return (
+        };  
+return (
         <div className='canvas-footer'>
             <div>{state ? 'True' : 'False'}</div>
             
-            <SubstanceButton substanceName='Beer' haveBeer={haveBeer}/>
-            <SubstanceButton substanceName='Tea'/>
-            <SubstanceButton substanceName='Smiley'/>
+            <BeerButton beerButton='Beer' haveBeer={haveBeer}/>
+            <SmileyButton smileyName='Smiley' haveBeer={haveBeer}/>
+           <TeaButton teaName='Tea' haveBeer={beer}/>
+           
         </div>
     );
 };
 
-export default CanvasFooter;
-
+export default CanvasFooter
