@@ -2,7 +2,7 @@ import React from "react";
 
 
 function GenreButton(props) {
-  return <button onClick={() => props.action()}>{props.musicButtonTitle}</button>;
+  return <button onClick={props.onClick}>{props.musicButtonTitle}</button>;
 
 }
 
