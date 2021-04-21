@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.substance-button {
+  flex: auto;
+  justify-content: space-around;
+  background-color: transparent;
+  margin: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+
+}
+
+.canvas-footer{
+display: flex;
+flex: auto;
+flex-direction: row;
+justify-content: space-around;
+background-color: transparent; 
+
+}
