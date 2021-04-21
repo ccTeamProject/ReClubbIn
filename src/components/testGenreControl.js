@@ -15,7 +15,7 @@ const GenreControl = () => {
       {myAmazingButton.map((button, index) => (
         <GenreButton
           key={index}
-          musicButtons={button.Title}
+          musicButtonTitle={button.Title}
           action={() => button.onclick()}
         />
       ))}
