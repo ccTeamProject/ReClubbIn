@@ -15,7 +15,7 @@ function CanvasContent() {
     return (
     <div className='content'>
         <GenreControl handleGenreSelection={handleGenreSelection}/>
-        <MusicStream />
+        <MusicStream genre={genreSelection}/>
     </div>
     );
 };
