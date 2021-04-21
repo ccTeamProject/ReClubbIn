@@ -6,19 +6,20 @@ import {useState} from 'react';
 
 const CanvasFooter = () => {
 
-const [state, setstate] = useState(0)
+const [state, setstate] = useState(false)
 
-    const addDrinks  = () => {
+    const haveBeer  = () => {
         
-        setstate(state + 1)
+        setstate(!state)
     
     };
 
 
     return (
         <div className='canvas-footer'>
-            {state}
-            <SubstanceButton substanceName='Beer' addDrinks={addDrinks}/>
+            <div>{state ? 'True' : 'False'}</div>
+            
+            <SubstanceButton substanceName='Beer' haveBeer={haveBeer}/>
             <SubstanceButton substanceName='Tea'/>
             <SubstanceButton substanceName='Smiley'/>
         </div>
