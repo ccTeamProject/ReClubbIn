@@ -3,7 +3,7 @@ import GenreButton from "./GenreButton";
 
 const myAmazingButton = [
     { Title: "Jazz"},
-    { Title: "Classic"},
+    { Title: "Classical"},
     { Title: "Techno"},
 ];
 
