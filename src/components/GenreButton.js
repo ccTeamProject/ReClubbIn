@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-function GenreButton(){
-    return (
-        <button>Genre</button>
-    );
-};
+
+function GenreButton(props) {
+  return <button onClick={props.onClick}>{props.musicButtonTitle}</button>;
+
+}
 
 export default GenreButton;

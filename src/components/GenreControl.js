@@ -1,12 +1,23 @@
-import React from 'react';
-import GenreButton from './GenreButton';
+import React, {useState} from "react";
+import GenreButton from "./GenreButton";
 
-const GenreControl = () => {
+const myAmazingButton = [
+    { Title: "Jazz"},
+    { Title: "Classical"},
+    { Title: "Techno"},
+];
+
+const GenreControl = (props) => {
     return (
-        <div className='genre-control'>
-            <GenreButton />
-            <GenreButton />
-            <GenreButton />
+        <div className="genre-control">
+
+        {myAmazingButton.map((button, index) => (
+            <GenreButton
+                key={index}
+                 musicButtonTitle={button.Title}
+                onClick={props.handleGenreSelection}
+            />
+        ))}
         </div>
     );
 };
