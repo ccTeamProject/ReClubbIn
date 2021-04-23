@@ -1,31 +1,40 @@
-import React from 'react';
-import BeerButton from './BeerButton';
-import TeaButton from './TeaButton';
-import SmileyButton from './SmileyButton';
-import {useState} from 'react';
-
-
+import React from "react";
+import BeerButton from "./BeerButton";
+import TeaButton from "./TeaButton";
+import SmileyButton from "./SmileyButton";
+import { useState } from "react";
 
 const CanvasFooter = () => {
+  const [beer, setbeer] = useState(false);
+  const [smiley, setsmiley] = useState(false);
 
-    const beer = false;
 
-const [state, setstate] = useState(false)
+  const haveBeer = () => {
+    setbeer(true);
+    setsmiley(false)
+  };
 
-    const haveBeer  = () => {
-        
-        setstate(!state)
-        };  
-return (
-        <div className='canvas-footer'>
-            <div>{state ? 'True' : 'False'}</div>
-            
-            <BeerButton beerButton='Beer' haveBeer={haveBeer}/>
-            <SmileyButton smileyName='Smiley' haveBeer={haveBeer}/>
-           <TeaButton teaName='Tea' haveBeer={beer}/>
-           
-        </div>
-    );
+  const haveSmiley = () => {
+    setsmiley(true);
+    setbeer(false)
+  };
+
+  const haveTea = () => {
+    setbeer(false);
+    setsmiley(false)
+  };
+
+  
+
+  return (
+    <div className="canvas-footer">
+      <div>{beer ? "Beer True" : "Beer False"}</div>
+      <div>{smiley ? "Smiley True" : "Smiley False"}</div>
+         <BeerButton beerButton="Beer" haveBeer={haveBeer} />
+        <SmileyButton smileyButton="Smiley" haveSmiley={haveSmiley} />
+        <TeaButton teaButton="Tea" haveTea={haveTea} />
+      </div>
+  );
 };
 
-export default CanvasFooter
+export default CanvasFooter;
