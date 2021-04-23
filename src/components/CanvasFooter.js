@@ -11,6 +11,12 @@ const CanvasFooter = () => {
 
   const haveBeer = () => {
     setbeer(true);
+    setsmiley(false)
+  };
+
+  const haveSmiley = () => {
+    setsmiley(true);
+    setbeer(false)
   };
 
   const haveTea = () => {
@@ -18,17 +24,15 @@ const CanvasFooter = () => {
     setsmiley(false)
   };
 
-  const haveSmiley = () => {
-    setsmiley(true);
-  };
+  
 
   return (
     <div className="canvas-footer">
-      <div>{beer ? "True" : "False"}</div>
-      <div>{smiley ? "True" : "False"}</div>
+      <div>{beer ? "Beer True" : "Beer False"}</div>
+      <div>{smiley ? "Smiley True" : "Smiley False"}</div>
          <BeerButton beerButton="Beer" haveBeer={haveBeer} />
-        <SmileyButton smileyName="Smiley" haveSmiley={haveSmiley} />
-        <TeaButton teaName="Tea" haveTea={haveTea} />
+        <SmileyButton smileyButton="Smiley" haveSmiley={haveSmiley} />
+        <TeaButton teaButton="Tea" haveTea={haveTea} />
       </div>
   );
 };
