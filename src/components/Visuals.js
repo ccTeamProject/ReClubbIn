@@ -18,7 +18,7 @@ const Visuals = ({genre}) => {
 
     return (
         <div>
-            <img src={src} alt='visual for {genre}'></img>
+            <img className="visual" src={src} alt='visual for {genre}'></img>
         </div>
     )
 }
