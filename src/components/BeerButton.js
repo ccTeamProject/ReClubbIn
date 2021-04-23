@@ -5,7 +5,7 @@ function BeerButton({ beerButton, haveBeer }) {
     <img
       style={{ width: "50px", backgroundColor: "" }}
       alt=""
-      src="https://www.flaticon.com/svg/vstatic/svg/761/761769.svg?token=exp=1619176106~hmac=45fbb45a25c7f8bde8484e658b765144"
+      src="https://upload.wikimedia.org/wikipedia/commons/7/76/577-beer-mug.svg"
       className="beer-button"
       onClick={haveBeer}
     />
