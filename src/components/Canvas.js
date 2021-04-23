@@ -5,7 +5,7 @@ import CanvasFooter from './CanvasFooter';
 
 const Canvas = () => {
     return (
-    <div>
+    <div id="CanvasContainer">
         <CanvasHeader />
         <CanvasContent />
         <CanvasFooter />

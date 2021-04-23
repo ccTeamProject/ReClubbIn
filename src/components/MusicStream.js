@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
+import "../MusicStream.css";
 
 const MusicStream = props => {
 
@@ -28,7 +29,7 @@ React.useEffect(()=>{
 
     return (
         <div>
-            <audio controls autoPlay={true} loop src={newAudioSource} >
+            <audio className="audio-player" controls autoPlay={true} loop src={newAudioSource} >
                 <p>Your browser does not support the <code>audio</code> element.</p>            
             </audio>
             
