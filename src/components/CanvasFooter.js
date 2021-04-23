@@ -28,8 +28,8 @@ const CanvasFooter = () => {
 
   return (
     <div className="canvas-footer">
-      <div>{beer ? "Beer True" : "Beer False"}</div>
-      <div>{smiley ? "Smiley True" : "Smiley False"}</div>
+      <div style={{color:'white'}}>{beer ? "Beer True" : "Beer False"}</div>
+      <div style={{color:'white'}}>{smiley ? "Smiley True" : "Smiley False"}</div>
          <BeerButton beerButton="Beer" haveBeer={haveBeer} />
         <SmileyButton smileyButton="Smiley" haveSmiley={haveSmiley} />
         <TeaButton teaButton="Tea" haveTea={haveTea} />

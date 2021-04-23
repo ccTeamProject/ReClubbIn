@@ -8,13 +8,13 @@ let genre = props.genre;
 
 const newApiRoot ='https://dn1.monophonic.digital/v1/'
 
-const [getStream, setGetStream] = React.useState([]);
+const [getStream, setGetStream] = useState([]);
 let songIDs = getStream.map((song)=>song.id);
 let randomSong = Math.floor(Math.random() * 99);;
 let newAudioSource = `${newApiRoot}tracks/${songIDs[randomSong]}/stream`;
 
 
-React.useEffect(()=>{
+useEffect(()=>{
 
     axios
         .get(`${newApiRoot}tracks/trending?genre=${genre}`)

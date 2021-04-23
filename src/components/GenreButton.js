@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import "../GenreButton.css";
 
-function Toggle(e){
-  e.target.classList.toggle("active")
-}
+
 
 function GenreButton(props) {
+  
+  function Toggle(e){
+    props.onClick(e);
+    e.target.classList.toggle("active");
+  }
+
   return <button
    className="genre-button"
-   onClick={props.onClick && Toggle}
+   onClick={Toggle}
    >{props.musicButtonTitle}
    </button>;
 

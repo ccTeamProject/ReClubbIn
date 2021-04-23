@@ -8,19 +8,16 @@ const myAmazingButton = [
 ];
 
 const GenreControl = (props) => {
-    const [isActive, setActive] = useState(false)
+    
 
     return (
         <div>
 
         {myAmazingButton.map((button, index) => (
-            <GenreButton
-                isActive={isActive}
+            <GenreButton                
                 key={index}
-                 musicButtonTitle={button.Title}
-                onClick={props.handleGenreSelection}
-            
-                
+                musicButtonTitle={button.Title}
+                onClick={props.handleGenreSelection} 
             />
         ))}
         </div>
