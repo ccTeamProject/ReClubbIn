@@ -13,6 +13,7 @@ export const OnboardingPage = () => {
       };
     return (
         <div>
+          <h1>ReClubbIn</h1>
             <Lottie options={defaultOptions} height={400} width={400} />
 
         </div>
