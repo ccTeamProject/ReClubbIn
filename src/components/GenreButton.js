@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import "../GenreButton.css";
+import {NavLink} from 'react-router-dom';
+
 
 
 
@@ -10,10 +12,15 @@ function GenreButton(props) {
     e.target.classList.toggle("active");
   }
 
+  const link = `/genres/${props.musicButtonTitle}`
+
   return <button
    className="genre-button"
    onClick={Toggle}
-   >{props.musicButtonTitle}
+   >
+    <NavLink to={link}>
+       {props.musicButtonTitle}
+    </NavLink>
    </button>;
 
 }

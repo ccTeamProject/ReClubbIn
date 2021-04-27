@@ -3,19 +3,12 @@ import GenreControl from './GenreControl';
 import MusicStream from './MusicStream';
 import Visuals from './Visuals';
 
-function CanvasContent() {
+function CanvasContent({genreSelection}) {
 
-    const [genreSelection, setGenreSelection] = useState('Jazz');
-
-    function handleGenreSelection(e) {        
-        setGenreSelection(e.target.innerText);
-    }
-
-    useEffect(()=>{console.log(genreSelection)},[genreSelection]);
+    
     
     return (
-    <div className='content'>
-        <GenreControl handleGenreSelection={handleGenreSelection}/>
+    <div className='content'>        
         <MusicStream genre={genreSelection}/>
         <Visuals genre = {genreSelection} />
     </div>

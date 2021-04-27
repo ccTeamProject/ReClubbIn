@@ -12,14 +12,11 @@ const GenreControl = (props) => {
 
     return (
         <div>
+            <GenreButton musicButtonTitle='Jazz' onClick={props.handleGenreSelection} />
+            <GenreButton musicButtonTitle='Classical' onClick={props.handleGenreSelection} />
+            <GenreButton musicButtonTitle='Techno' onClick={props.handleGenreSelection} />
 
-        {myAmazingButton.map((button, index) => (
-            <GenreButton                
-                key={index}
-                musicButtonTitle={button.Title}
-                onClick={props.handleGenreSelection} 
-            />
-        ))}
+
         </div>
     );
 };
