@@ -1,7 +1,7 @@
 import './App.css';
 import Canvas from './components/Canvas'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import GenreSelction from './components/GenreSelction';
+import GenreSelection from './components/GenreSelection';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
 
           </Route>
           <Route path="/genres">
-            <GenreSelction />
+            <GenreSelection />
           </Route> 
 
           {/* <Route path="/">

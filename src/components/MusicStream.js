@@ -2,11 +2,11 @@ import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import "../MusicStream.css";
 
-const MusicStream = props => {
+const MusicStream = (props) => {
 
-let genre = props.genre;
+const {genre}= props.genre;
 
-const newApiRoot ='https://dn1.monophonic.digital/v1/'
+const newApiRoot ='https://discovery-us-01.audius.openplayer.org/v1/'
 
 const [getStream, setGetStream] = useState([]);
 let songIDs = getStream.map((song)=>song.id);
