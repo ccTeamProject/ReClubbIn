@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "./lotties/circle-pulse";
+import animationData from "../lotties/circle-pulse.json";
 
-export const OnboardingPage = () => {
+const OnboardingPage = () => {
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -19,3 +19,5 @@ export const OnboardingPage = () => {
         </div>
     )
 }
+
+export default OnboardingPage
