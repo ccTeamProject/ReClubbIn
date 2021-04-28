@@ -32,14 +32,29 @@
   }
 }
 
-.substance-button {
-  flex: auto;
+.canvas-header {
+  height: 100px;
+  display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.canvas-content {
+  display:flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  justify-content:center;
+}
+
+.beer-button, .smiley-button, .tea-button {
+  /* flex: auto;
+  justify-content: space-around; */
   background-color: transparent;
   margin: 4px;
   padding: 0;
   border: none;
   background: none;
+  object-fit:contain;
 
 }
 
@@ -49,5 +64,9 @@ flex: auto;
 flex-direction: row;
 justify-content: space-around;
 background-color: transparent; 
+height: 100px;
+width:100vw;
+position: absolute;
+bottom:0;
 
 }
