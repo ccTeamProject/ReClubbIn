@@ -1,6 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie";
 import animationData from "../lotties/circle-pulse.json";
+import "../OnBoardingPage.css"
 
 const OnboardingPage = () => {
     const defaultOptions = {
@@ -13,8 +14,9 @@ const OnboardingPage = () => {
       };
     return (
         <div>
-          <h1>ReClubbIn</h1>
-            <Lottie options={defaultOptions} height={400} width={400} />
+          
+            <Lottie options={defaultOptions} height={800} width={800} />
+            <h1>ReClubbIn</h1>
 
         </div>
     )
