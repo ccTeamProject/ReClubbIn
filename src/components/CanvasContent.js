@@ -1,21 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import GenreControl from './GenreControl';
 import MusicStream from './MusicStream';
 import Visuals from './Visuals';
+import {NavLink} from 'react-router-dom';
 
-function CanvasContent() {
+function CanvasContent({genreSelection}) {
 
-    const [genreSelection, setGenreSelection] = useState('Jazz');
-
-    function handleGenreSelection(e) {        
-        setGenreSelection(e.target.innerText);
-    }
-
-    useEffect(()=>{console.log(genreSelection)},[genreSelection]);
+    
     
     return (
     <div className='content'>
-        <GenreControl handleGenreSelection={handleGenreSelection}/>
+        <button> 
+            <NavLink to="/genres">back to genre-selection</NavLink>
+        </button>       
         <MusicStream genre={genreSelection}/>
         <Visuals genre = {genreSelection} />
     </div>

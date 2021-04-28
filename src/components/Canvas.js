@@ -3,11 +3,15 @@ import CanvasContent from './CanvasContent';
 import CanvasHeader from './CanvasHeader';
 import CanvasFooter from './CanvasFooter';
 
-const Canvas = () => {
+
+const Canvas = (props) => {
+
+    const params = props.match.params;  
+
     return (
     <div id="CanvasContainer">
         <CanvasHeader />
-        <CanvasContent />
+        <CanvasContent genreSelection={params}/>
         <CanvasFooter />
     </div>)    
 }
