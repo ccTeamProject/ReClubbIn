@@ -1,0 +1,15 @@
+.blurBG {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(137, 43, 226, 0.335);
+    position:absolute;
+    backdrop-filter: blur(10px);
+}
+.smileyBG {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(58, 226, 43, 0.335);
+    position:absolute;
+}
