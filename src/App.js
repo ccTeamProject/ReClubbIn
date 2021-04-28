@@ -2,6 +2,7 @@ import './App.css';
 import Canvas from './components/Canvas'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import GenreSelection from './components/GenreSelection';
+import OnboardingPage from './components/OnboardingPage';
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
             <GenreSelection />
           </Route> 
 
-          {/* <Route path="/">
-            <OnbordingPage />
-          </Route> */}
+          <Route path="/">
+            <OnboardingPage />
+          </Route>
         </Switch>
     </div>
     </Router>
