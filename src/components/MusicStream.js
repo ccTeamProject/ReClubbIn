@@ -8,9 +8,15 @@ const {genre}= props.genre;
 
 const newApiRoot ='https://discovery-us-01.audius.openplayer.org/v1/'
 
+const [randomSong, setRandomSong] = useState('');
+useEffect(() => {
+    setRandomSong(Math.floor(Math.random() * 99));
+    return () => {
+    }
+}, [])
+
 const [getStream, setGetStream] = useState([]);
 let songIDs = getStream.map((song)=>song.id);
-let randomSong = Math.floor(Math.random() * 99);
 let newAudioSource = `${newApiRoot}tracks/${songIDs[randomSong]}/stream`;
 
 
