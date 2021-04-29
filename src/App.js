@@ -3,7 +3,6 @@ import Canvas from "./components/Canvas";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import GenreSelection from "./components/GenreSelection";
 import OnboardingPage from "./components/OnboardingPage";
-import CanvasHeader from "./components/CanvasHeader";
 
 function App() {
   return (

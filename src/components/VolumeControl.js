@@ -1,13 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const VolumeControl = () => {
-  // const [volume, setVolume] = useState(0.5);
-  const volumes = ["a", "b", "c"];
+  console.log("im rendering volumeControl");
+  // const [volumeState, setVolumeState] = useState("");
+  const handleEvent = () => {
+    console.log("hello");
+    // return setVolumeState("hello");
+  };
+  // useEffect(() => {
+  //   handleEvent();
+  // }, []);
+
+  const volumes = ["mute", "medium", "loud"];
   return (
     <div className="volume-control">
-      {volumes.map((volume) => {
-        console.log("I am mapping this", volume);
-        return <button>{volume} </button>;
+      <button
+        onClick={(e) => {
+          debugger;
+          console.log("click");
+        }}
+      >
+        test
+      </button>
+      {volumes.map((volume, index) => {
+        console.log("I am mapping this");
+        return (
+          <button
+            key={volume}
+            onClick={(e) => {
+              debugger;
+              console.log("click");
+            }}
+          >
+            {volume}
+          </button>
+        );
       })}
     </div>
   );
