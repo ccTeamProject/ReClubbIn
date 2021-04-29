@@ -8,7 +8,6 @@ import CanvasHeader from "./components/CanvasHeader";
 function App() {
   return (
     <Router>
-      <CanvasHeader />
       <div className="App">
         <Switch>
           <Route path="/genres/:genre" component={Canvas}></Route>
