@@ -2,10 +2,21 @@ import React, { useState, useEffect } from "react";
 
 const VolumeControl = () => {
   console.log("im rendering volumeControl");
-  // const [volumeState, setVolumeState] = useState("");
-  const handleEvent = () => {
-    console.log("hello");
-    // return setVolumeState("hello");
+  const [volumeState, setVolumeState] = useState("");
+  console.log(volumeState);
+
+  const handleEvent = (event) => {
+    if (event.target.value == "mute") {
+      return setVolumeState(0);
+    }
+    if (event.target.value == "medium") {
+      return setVolumeState(0.5);
+    }
+
+    if (event.target.value == "loud") {
+      return setVolumeState(1.0);
+    }
+    return setVolumeState("hello");
   };
   // useEffect(() => {
   //   handleEvent();
@@ -14,24 +25,10 @@ const VolumeControl = () => {
   const volumes = ["mute", "medium", "loud"];
   return (
     <div className="volume-control">
-      <button
-        onClick={(e) => {
-          debugger;
-          console.log("click");
-        }}
-      >
-        test
-      </button>
       {volumes.map((volume, index) => {
         console.log("I am mapping this");
         return (
-          <button
-            key={volume}
-            onClick={(e) => {
-              debugger;
-              console.log("click");
-            }}
-          >
+          <button value={volume} key={volume} onClick={handleEvent}>
             {volume}
           </button>
         );
