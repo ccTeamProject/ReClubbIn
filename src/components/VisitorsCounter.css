@@ -1,0 +1,9 @@
+.visitors-counter p {
+    color: white;
+}
+
+.visitors-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
