@@ -1,4 +1,4 @@
-/* .guide-button a{
+.guide-button {
     position: absolute;
     bottom: 20%;
     margin: 1 rem 2rem;
@@ -8,7 +8,7 @@
     text-decoration: none;
     text-align: center;
 
-}  */
+} 
 
 /* .guide-1 a{
     display: inline-block;
