@@ -1,11 +1,6 @@
 import React, {useState} from "react";
 import GenreButton from "./GenreButton";
 
-const myAmazingButton = [
-    { Title: "Jazz"},
-    { Title: "Classical"},
-    { Title: "Techno"},
-];
 
 const GenreControl = () => {
     
@@ -13,9 +8,9 @@ const GenreControl = () => {
     return (
         <div>
             <GenreButton musicButtonTitle='Jazz' />
-            <GenreButton musicButtonTitle='Classical'/>
+            <GenreButton musicButtonTitle='Alternative'/>
             <GenreButton musicButtonTitle='Techno' />
-
+            <GenreButton musicButtonTitle='Metal' />
 
         </div>
     );
