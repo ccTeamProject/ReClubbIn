@@ -14,7 +14,7 @@ const OnboardingPage = () => {
         }
       };
     return (
-        <div>
+        <div className="onboarding-container">
           <h1>ReClubbIn</h1>
          
             <Lottie options={defaultOptions} height={800} width={800} />

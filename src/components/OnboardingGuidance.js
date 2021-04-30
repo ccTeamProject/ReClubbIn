@@ -8,30 +8,28 @@ export const OnboardingGuidance = (props) => {
     const guides = [
         {id:1, text: 'Choose your Stage'},
         {id:2, text: 'Play around'},
-        {id:3, text: 'Tap In'},
+        {id:3, text: 'Tap In'}
     ];
 
     const [index, setIndex] = useState(0);
 
         useEffect(() => {
         const interval = setInterval(() => {
-          if(index>2){
-            console.log('dont do it')
-          }
+          if(index<=2){
+            setIndex(index + 1);          }
           else{
-            setIndex(index + 1);
+            clearInterval(interval);
           }
           }, 1000);
     
-        return () => clearInterval(interval);
-      }, []);
-      
-      return (
-          <p className="guide-button">
-            {guides[index].text}
-          </p>
-                       
-                       
-                     
-                    );
-                };
+       return (interval)
+
+      }, [index]);
+
+      return(
+        <div>
+           { index < 3 && <span className="guide-button">{guides[index].text}</span>}
+           { index > 2 && <span className="guide-button"> <NavLink to ="/genres">{guides[2].text}</NavLink></span>}
+        </div>   
+      )
+};
