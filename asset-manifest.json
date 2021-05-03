@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReClubbIn/static/css/main.5964c260.chunk.css",
+    "main.js": "/ReClubbIn/static/js/main.7691a2cf.chunk.js",
+    "main.js.map": "/ReClubbIn/static/js/main.7691a2cf.chunk.js.map",
+    "runtime-main.js": "/ReClubbIn/static/js/runtime-main.7e91a835.js",
+    "runtime-main.js.map": "/ReClubbIn/static/js/runtime-main.7e91a835.js.map",
+    "static/js/2.ca0d58ed.chunk.js": "/ReClubbIn/static/js/2.ca0d58ed.chunk.js",
+    "static/js/2.ca0d58ed.chunk.js.map": "/ReClubbIn/static/js/2.ca0d58ed.chunk.js.map",
+    "static/js/3.1ebfa066.chunk.js": "/ReClubbIn/static/js/3.1ebfa066.chunk.js",
+    "static/js/3.1ebfa066.chunk.js.map": "/ReClubbIn/static/js/3.1ebfa066.chunk.js.map",
+    "index.html": "/ReClubbIn/index.html",
+    "static/css/main.5964c260.chunk.css.map": "/ReClubbIn/static/css/main.5964c260.chunk.css.map",
+    "static/js/2.ca0d58ed.chunk.js.LICENSE.txt": "/ReClubbIn/static/js/2.ca0d58ed.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e91a835.js",
+    "static/js/2.ca0d58ed.chunk.js",
+    "static/css/main.5964c260.chunk.css",
+    "static/js/main.7691a2cf.chunk.js"
+  ]
+}
