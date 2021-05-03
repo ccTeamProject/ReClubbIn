@@ -1,0 +1,67 @@
+.guide-button {
+    
+    position:absolute;
+    bottom: 20%;
+    margin: 1 rem 2rem;
+    background-color: cornsilk;
+    padding: 1rem 2rem;
+    align-items: center;
+    align-self: center;
+    text-decoration: none;
+    text-align: center;
+    width: 60
+} 
+
+.guide-button a {
+  
+  text-decoration: none;
+  
+  
+
+} 
+
+
+.guide {
+    display: inline-block;
+    font-size: 1rem;
+    color: cornsilk;
+    text-decoration: none;
+    animation: fadeInOut linear 7s;
+    -webkit-animation: fadeInOut linear 7s;
+    -moz-animation: fadeInOut linear 7s;
+    -o-animation: fadeInOut linear 7s;
+    -ms-animation: fadeInOut linear 7s;
+  }
+  
+  @keyframes fadeInOut {
+    0%,100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeInOut {
+    0%,100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeInOut {
+    0%,100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeInOut {
+    0%,100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeInOut {
+    0%,100% {opacity:0;}
+    50% {opacity:1;}
+  }
+/* 
+  guide-visible{
+      opacity: 1;
+  }
+
+  guide-invisible{
+      opacity: 0;
+  } */

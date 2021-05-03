@@ -1,8 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
+import "../GenreButton.css";
+import {NavLink} from 'react-router-dom';
+
+
 
 
 function GenreButton(props) {
-  return <button onClick={props.onClick}>{props.musicButtonTitle}</button>;
+  
+  const link = `/genres/${props.musicButtonTitle}`
+
+  return <button
+   className="genre-button"
+
+   >
+    <NavLink to={link}>
+       {props.musicButtonTitle}
+    </NavLink>
+   </button>;
 
 }
 

@@ -1,23 +1,17 @@
 import React, {useState} from "react";
 import GenreButton from "./GenreButton";
 
-const myAmazingButton = [
-    { Title: "Jazz"},
-    { Title: "Classical"},
-    { Title: "Techno"},
-];
 
-const GenreControl = (props) => {
+const GenreControl = () => {
+    
+
     return (
-        <div className="genre-control">
+        <div>
+            <GenreButton musicButtonTitle='Jazz' />
+            <GenreButton musicButtonTitle='Alternative'/>
+            <GenreButton musicButtonTitle='Techno' />
+            <GenreButton musicButtonTitle='Metal' />
 
-        {myAmazingButton.map((button, index) => (
-            <GenreButton
-                key={index}
-                 musicButtonTitle={button.Title}
-                onClick={props.handleGenreSelection}
-            />
-        ))}
         </div>
     );
 };
