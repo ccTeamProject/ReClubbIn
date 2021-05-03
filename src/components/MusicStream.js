@@ -16,8 +16,11 @@ useEffect(() => {
 }, [])
 
 const [getStream, setGetStream] = useState([]);
-let songIDs = getStream.map((song)=>song.id);
-let newAudioSource = `${newApiRoot}tracks/${songIDs[randomSong]}/stream`;
+const songIDs = getStream.map((song)=>song.id);
+let newAudioSource = '';
+if (getStream.length !==0) {
+    newAudioSource = `${newApiRoot}tracks/${songIDs[randomSong]}/stream`;
+}
 
 
 useEffect(()=>{
@@ -25,17 +28,23 @@ useEffect(()=>{
     axios
         .get(`${newApiRoot}tracks/trending?genre=${genre}`)
         .then((response)=>response.data)
-        .then((data)=> setGetStream(data.data));
-    
-       
-
+        .then((data)=> setGetStream(data.data))
+        .catch(err => {
+            console.log(err);
+        })
 
 }, []);
 
-
     return (
         <div>
-            <audio ref={props.audioRef} id="audio-element" className="audio-player" autoPlay={true} loop src={newAudioSource} >
+            <audio 
+                ref={props.audioRef} 
+                id="audio-element" 
+                className="audio-player" 
+                crossOrigin = "anonymous" 
+                autoPlay={true} 
+                loop 
+                src={newAudioSource}>
                 <p>Your browser does not support the <code>audio</code> element.</p>            
             </audio>
             
