@@ -6,7 +6,7 @@ const MusicStream = (props) => {
 
 const {genre}= props.genre;
 
-const newApiRoot ='https://discovery-us-01.audius.openplayer.org/v1/'
+const newApiRoot ='https://discoveryprovider.audius.co/v1/'
 
 const [randomSong, setRandomSong] = useState('');
 useEffect(() => {
@@ -35,7 +35,7 @@ useEffect(()=>{
 
     return (
         <div>
-            <audio className="audio-player" controls autoPlay={true} loop src={newAudioSource} >
+            <audio ref={props.audioRef} id="audio-element" className="audio-player" autoPlay={true} loop src={newAudioSource} >
                 <p>Your browser does not support the <code>audio</code> element.</p>            
             </audio>
             
