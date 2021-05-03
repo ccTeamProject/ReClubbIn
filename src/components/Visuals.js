@@ -29,7 +29,7 @@ const Visuals = (props) => {
     }
 
     return (
-        <div>
+        <div className='genreGifs'>
             <img className="visual" src={src} alt={`visual for ${genre}`}></img>
         </div>
     )
