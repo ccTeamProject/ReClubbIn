@@ -1,38 +1,22 @@
 import React, { useState, useEffect } from "react";
+import "./VolumeControl.css";
 
-const VolumeControl = () => {
+const VolumeControl = ({ volumeState, handleEvent }) => {
   console.log("im rendering volumeControl");
-  const [volumeState, setVolumeState] = useState("");
+
   console.log(volumeState);
 
-  const handleEvent = (event) => {
-    if (event.target.value == "mute") {
-      return setVolumeState(0);
-    }
-    if (event.target.value == "medium") {
-      return setVolumeState(0.5);
-    }
-
-    if (event.target.value == "loud") {
-      return setVolumeState(1.0);
-    }
-    return setVolumeState("hello");
-  };
-  // useEffect(() => {
-  //   handleEvent();
-  // }, []);
-
-  const volumes = ["mute", "medium", "loud"];
   return (
     <div className="volume-control">
-      {volumes.map((volume, index) => {
-        console.log("I am mapping this");
-        return (
-          <button value={volume} key={volume} onClick={handleEvent}>
-            {volume}
-          </button>
-        );
-      })}
+      <input
+        className="volume-slider"
+        type="range"
+        min={0}
+        max={1}
+        step={0.02}
+        value={volumeState}
+        onChange={handleEvent}
+      />
     </div>
   );
 };

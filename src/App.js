@@ -6,7 +6,7 @@ import OnboardingPage from "./components/OnboardingPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename='/ReClubbIn'>
       <div className="App">
         <Switch>
           <Route path="/genres/:genre" component={Canvas}></Route>
