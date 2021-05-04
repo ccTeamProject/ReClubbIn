@@ -5,9 +5,9 @@ import "../OnBoardingGuidance.css"
 export const OnboardingGuidance = (props) => {
     
     const guides = [
-        {id:1, text: 'Choose your Stage'},
-        {id:2, text: 'Play around'},
-        {id:3, text: 'Tap In'}
+        {id:1, text: 'Choose your Stage', url:"#"},
+        {id:2, text: 'Play around', url:"#"},
+        {id:3, text: 'Tap In', url:"/genres"}
     ];
 
     const [index, setIndex] = useState(0);
