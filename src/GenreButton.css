@@ -1,14 +1,21 @@
-.genre-button{
-    background-color: white;
-    border: none;
-    padding: 0.6rem 2rem;
-    margin: 1rem 2rem;
-    border-radius: 0.3rem;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+.genre-button {
+	background-color:#00f289;
+	border-radius:19px;
+	border:1px solid #00bc6b;
+	display:inline-block;
+	cursor:pointer;
+	color:#005925;
+	font-family:'Roboto', sans-serif;
+	font-size:17px;
+	padding:10px 31px;
+	text-decoration:none;
+}
+.genre-button:hover {
+	background-color:#00e4f0;
+}
+.genre-button:active {
+	position:relative;
+	top:1px;
 }
 
-.genre-button.active{
-background-color: chartreuse;
-}
 

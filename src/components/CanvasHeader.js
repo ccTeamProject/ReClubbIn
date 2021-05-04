@@ -7,9 +7,9 @@ const CanvasHeader = ({ volumeState, handleEvent }) => {
   return (
     <div className="canvas-header">
       <VolumeControl volumeState={volumeState} handleEvent={handleEvent} />
-      <button style={{ height: "40px" }}>
-        <NavLink to="/genres">back to genre-selection</NavLink>
-      </button>
+      <div >
+        <NavLink style= {{color:"#FF0099", cursor:"pointer"}}to="/genres">go back</NavLink>
+      </div>
       <VisitorsCounter />
     </div>
   );
