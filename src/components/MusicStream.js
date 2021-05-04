@@ -18,7 +18,7 @@ useEffect(() => {
     }
 }, [])
 
-audioElement.onended = () => setRandomSong(Math.floor(Math.random() * 99));
+const newSong = () => setRandomSong(Math.floor(Math.random() * 99));
 
 
 const [getStream, setGetStream] = useState([]);
@@ -49,6 +49,7 @@ useEffect(()=>{
                 className="audio-player" 
                 crossOrigin = "anonymous" 
                 autoPlay={true} 
+                onEnded={newSong}
                 src={newAudioSource}>
                 <p>Your browser does not support the <code>audio</code> element.</p>            
             </audio>
