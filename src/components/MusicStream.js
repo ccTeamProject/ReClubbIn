@@ -12,8 +12,6 @@ const MusicStream = (props) => {
   const [randomSong, setRandomSong] = useState("");
   useEffect(() => {
     setRandomSong(Math.floor(Math.random() * 99));
-    audioElement.volume = props.volumeState;
-    return () => {};
   }, []);
 
   const newSong = () => setRandomSong(Math.floor(Math.random() * 99));
@@ -23,6 +21,8 @@ const MusicStream = (props) => {
   let newAudioSource = "";
   if (getStream.length !== 0) {
     newAudioSource = `${newApiRoot}tracks/${songIDs[randomSong]}/stream`;
+    console.log(audioElement.volume);
+    audioElement.volume = props.volumeState;
   }
 
   useEffect(() => {
@@ -38,7 +38,6 @@ const MusicStream = (props) => {
   return (
     <div>
       <audio
-        volume={props.volumeState}
         ref={props.audioRef}
         id="audio-element"
         className="audio-player"
