@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 
 const VolumeControl = () => {
   console.log("im rendering volumeControl");
-  const [volumeState, setVolumeState] = useState("");
+  const [volumeState, setVolumeState] = useState(0.5);
   console.log(volumeState);
 
   const handleEvent = (event) => {
-    if (event.target.value == "mute") {
+    if (event.target.value === "mute") {
       return setVolumeState(0);
     }
-    if (event.target.value == "medium") {
+    if (event.target.value === "medium") {
       return setVolumeState(0.5);
     }
 
-    if (event.target.value == "loud") {
+    if (event.target.value === "loud") {
       return setVolumeState(1.0);
     }
     return setVolumeState("hello");
@@ -22,7 +22,7 @@ const VolumeControl = () => {
   //   handleEvent();
   // }, []);
 
-  const volumes = ["mute", "medium", "loud"];
+  const volumes = ["mute"];
   return (
     <div className="volume-control">
       {volumes.map((volume, index) => {
@@ -33,6 +33,16 @@ const VolumeControl = () => {
           </button>
         );
       })}
+      <input
+        type="range"
+        min={0}
+        max={1}
+        step={0.02}
+        value={volumeState}
+        onChange={(event) => {
+          setVolumeState(event.target.valueAsNumber);
+        }}
+      />
     </div>
   );
 };
