@@ -8,12 +8,18 @@ const {genre}= props.genre;
 
 const newApiRoot ='https://discoveryprovider.audius.co/v1/'
 
+const audioElement = props.audioRef.current;
+
 const [randomSong, setRandomSong] = useState('');
 useEffect(() => {
     setRandomSong(Math.floor(Math.random() * 99));
+    console.log(audioElement);
     return () => {
     }
 }, [])
+
+audioElement.onended = () => setRandomSong(Math.floor(Math.random() * 99));
+
 
 const [getStream, setGetStream] = useState([]);
 const songIDs = getStream.map((song)=>song.id);
@@ -43,7 +49,6 @@ useEffect(()=>{
                 className="audio-player" 
                 crossOrigin = "anonymous" 
                 autoPlay={true} 
-                loop 
                 src={newAudioSource}>
                 <p>Your browser does not support the <code>audio</code> element.</p>            
             </audio>
