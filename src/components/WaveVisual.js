@@ -16,6 +16,7 @@ const WaveVisual = ({audioRef, canvasRef}) => {
         audioSrc.connect(analyser);
         audioSrc.connect(context.destination);
         analyser.connect(context.destination);
+        
         function renderFrame(){
             let freqData = new Uint8Array(analyser.frequencyBinCount)
             requestAnimationFrame(renderFrame)
