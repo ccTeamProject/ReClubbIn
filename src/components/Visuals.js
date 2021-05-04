@@ -6,6 +6,8 @@ const Visuals = (props) => {
     const classicalSrc = 'https://media.giphy.com/media/3ohhwfdiNAavtCtrkA/giphy.gif'
     const alternativeSrc = 'https://media.giphy.com/media/lcyaEwgNvvoFzpnfDp/giphy.gif'
     const metalSrc = 'https://i.giphy.com/media/cQRPusQzy23OE/giphy.webp'
+    const punkSrc ='https://media.giphy.com/media/CMI7G8hvEvS9i/source.gif'
+    const reggaeSrc = 'https://media.giphy.com/media/3osxYcfd0CzzIVQJYk/source.gif'
     
 
     const {genre} = props.genre;
@@ -21,15 +23,21 @@ const Visuals = (props) => {
     if (genre === 'Classical'){
         src = classicalSrc;
     }
-    if (genre === 'Alternative'){
+    if (genre === 'Ambient'){
         src = alternativeSrc;
     }
     if (genre === 'Metal'){
         src = metalSrc;
     }
+    if (genre === 'Punk'){
+        src = punkSrc;
+    }
+    if (genre === 'Reggae'){
+        src = reggaeSrc;
+    }
 
     return (
-        <div>
+        <div className='genreGifs'>
             <img className="visual" src={src} alt={`visual for ${genre}`}></img>
         </div>
     )

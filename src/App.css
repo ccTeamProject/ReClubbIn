@@ -71,3 +71,10 @@ position: absolute;
 bottom:0;
 
 }
+
+/*some stuff for the gifs in visuals*/
+.genreGifs img {
+  max-width: 100vw;
+  object-fit: cover;
+  max-height: 300px;
+}

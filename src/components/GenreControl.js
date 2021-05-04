@@ -8,9 +8,11 @@ const GenreControl = () => {
     return (
         <div>
             <GenreButton musicButtonTitle='Jazz' />
-            <GenreButton musicButtonTitle='Alternative'/>
+            <GenreButton musicButtonTitle='Ambient'/>
             <GenreButton musicButtonTitle='Techno' />
             <GenreButton musicButtonTitle='Metal' />
+            <GenreButton musicButtonTitle='Punk' />
+            <GenreButton musicButtonTitle='Reggae' />
 
         </div>
     );
