@@ -19,16 +19,16 @@
 } 
 
 
-a.guide{
+a.guide-in{
     display: inline-block;
     font-size: 1rem;
     color: cornsilk;
     text-decoration: none;
-    animation: fadeIn linear 2s;
-    -webkit-animation: fadeIn linear 2s;
-    -moz-animation: fadeIn linear 2s;
-    -o-animation: fadeIn linear 2s;
-    -ms-animation: fadeIn linear 2s;
+    animation: fadeIn linear 3;
+    -webkit-animation: fadeIn linear 3s;
+    -moz-animation: fadeIn linear 3s;
+    -o-animation: fadeIn linear 3s;
+    -ms-animation: fadeIn linear 3s;
   }
   
   @keyframes fadeIn {
@@ -54,6 +54,43 @@ a.guide{
   @-ms-keyframes fadeIn{
     0% {opacity:0;}
     100% {opacity:1;}
+  }
+
+  a.guide-out{
+    display: inline-block;
+    font-size: 1rem;
+    color: cornsilk;
+    text-decoration: none;
+    animation: fadeOut linear 3;
+    -webkit-animation: fadeOut linear 3s;
+    -moz-animation: fadeOut linear 3s;
+    -o-animation: fadeOut linear 3s;
+    -ms-animation: fadeOut linear 3s;
+  }
+  
+  @keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-ms-keyframes fadeOut{
+    0% {opacity:1;}
+    100% {opacity:0;}
   }
 /* 
   guide-visible{

@@ -2,30 +2,31 @@ import React, {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import "../OnBoardingGuidance.css"
 
-export const OnboardingGuidance = (props) => {
-    
+export const OnboardingGuidance = () => {
+    const guideIn = "guide-in";
+    const guideOut = "guide-out";
     const guides = [
-        {id:1, text: 'Choose your Stage', url:"#"},
-        {id:2, text: 'Play around', url:"#"},
-        {id:3, text: 'Tap In', url:"/genres"}
+        {id:1, text: 'Choose your Stage', url:"/genres", fade:true},
+        {id:2, text: 'Play around', url:"/genres", fade:true},
+        {id:3, text: 'Tap In', url:"/genres", fade:true}
     ];
 
     const [index, setIndex] = useState(0);
+    const [guideClass, setGuideClass] = useState(true);
 
         useEffect(() => {
-        const interval = setInterval(() => {
-          if(index<=1){
-            setIndex(index + 1);          }
-          else{
+          const interval = setInterval(() => {
+            if(index<=1){
+            setIndex(index + 1);}
+          }, 6000);
+          return()=> {
             clearInterval(interval);
-          }
-          }, 4000);
-        }, [guides[2]]);
-
+         
+          };
+        })
       return(
         <div>
-           { index < 3 && <span ><NavLink to = "/genres" className="guide">{guides[index].text}</NavLink></span>}
-           {/* { index > 2 && <span className="guide-button"> <NavLink to ="/genres">{guides[2].text}</NavLink></span>}  */}
+           {<NavLink to = {guides[index].url} className={guides[index].fade ? guideIn : guideOut }>{guides[index].text}</NavLink>}
         </div>   
       )
 };
