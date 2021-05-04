@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./VolumeControl.css";
 
 const VolumeControl = ({ volumeState, handleEvent }) => {
   console.log("im rendering volumeControl");
@@ -8,6 +9,7 @@ const VolumeControl = ({ volumeState, handleEvent }) => {
   return (
     <div className="volume-control">
       <input
+        className="volume-slider"
         type="range"
         min={0}
         max={1}
