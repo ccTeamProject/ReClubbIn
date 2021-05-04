@@ -14,21 +14,18 @@ export const OnboardingGuidance = (props) => {
 
         useEffect(() => {
         const interval = setInterval(() => {
-          if(index<=2){
+          if(index<=1){
             setIndex(index + 1);          }
           else{
             clearInterval(interval);
           }
           }, 4000);
-    
-       
-
-      }, []);
+        }, [guides[2]]);
 
       return(
         <div>
-           { index < 3 && <span className="guide-button">{guides[index].text}</span>}
-           { index > 2 && <span className="guide-button"> <NavLink to ="/genres">{guides[2].text}</NavLink></span>}
+           { index < 3 && <span ><NavLink to = "/genres" className="guide">{guides[index].text}</NavLink></span>}
+           {/* { index > 2 && <span className="guide-button"> <NavLink to ="/genres">{guides[2].text}</NavLink></span>}  */}
         </div>   
       )
 };

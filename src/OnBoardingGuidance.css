@@ -1,4 +1,4 @@
-.guide-button {
+.guide-button a{
     
     margin: 1 rem 2rem;
     background-color: cornsilk;
@@ -19,41 +19,41 @@
 } 
 
 
-.guide {
+a.guide{
     display: inline-block;
     font-size: 1rem;
     color: cornsilk;
     text-decoration: none;
-    animation: fadeInOut linear 7s;
-    -webkit-animation: fadeInOut linear 7s;
-    -moz-animation: fadeInOut linear 7s;
-    -o-animation: fadeInOut linear 7s;
-    -ms-animation: fadeInOut linear 7s;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
   }
   
-  @keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @keyframes fadeIn {
+    0%{opacity:0;}
+    100% {opacity:1;}
   }
   
-  @-moz-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
   }
   
-  @-webkit-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-webkit-keyframes fadeIn {
+    0%{opacity:0;}
+    100%{opacity:1;}
   }
   
-  @-o-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
   }
   
-  @-ms-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-ms-keyframes fadeIn{
+    0% {opacity:0;}
+    100% {opacity:1;}
   }
 /* 
   guide-visible{
