@@ -14,12 +14,16 @@ const OnboardingPage = () => {
         }
       };
     return (
-        <div className="onboarding-container">
+        <div className="page-container">
+          <div className="page-bloc">
+          <Lottie options={defaultOptions} height={800} width={800} />
+          </div>
+          <div className="page-bloc">
           <h1>ReClubbIn</h1>
-         
-            <Lottie options={defaultOptions} height={800} width={800} />
-            <OnboardingGuidance />
-            
+          </div>
+          <div className="page-bloc">
+          <OnboardingGuidance />
+          </div>  
             
 
         </div>

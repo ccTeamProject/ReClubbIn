@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
-import {useSpring, useTransition, animated, config} from 'react-spring';
 import "../OnBoardingGuidance.css"
 
 export const OnboardingGuidance = (props) => {
@@ -20,11 +19,11 @@ export const OnboardingGuidance = (props) => {
           else{
             clearInterval(interval);
           }
-          }, 1000);
+          }, 4000);
     
-       return (interval)
+       
 
-      }, [index]);
+      }, []);
 
       return(
         <div>
