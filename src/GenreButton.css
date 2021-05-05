@@ -42,175 +42,52 @@
 /* transform: rotate(19.59deg); */
 }
 
-/* .genre-button.active{
-background-color: chartreuse;
-} */
-/* 
-.rotate-button1{
-
-}
-
-.rotate-button2{
-    
-}
-
-.rotate-button3{
-    
-}
-
-.rotate-button4{
-    
-}
-
-.rotate-button5{
-    
-}
-
-.rotate-button6{
-    
-} */
-
-/* /* GenreButtons */
-
-/* position: absolute;
-width: 440.19px;
-height: 521.78px;
-left: -39px;
-top: 97px; */
-
-
-
-/* /* GenreButtons */
-
-/* position: absolute;
-left: 33.8%;
-right: -4.07%;
-top: 0%;
-bottom: 14.95%;
-
-transform: rotate(19.59deg);
-
- *//*  */ 
-/* JAZZ */
-
-/* .rotate-button1{
-
-
-color: #F8F8F8;
-
-transform: rotate(60deg);
-} */
-
-/* AMBIENT */
-
-/* .rotate-button2{
-
-color: #F5F5F5;
-
-transform: rotate(30deg);
-}
-
-/* TECHNO */
-
-/* .rotate-button3{
-
-
-
-color: #F5F5F5;
-
-transform: rotate(-5.99deg);
-} */ /* */ 
-
-/* METAL */
-
-/* .rotate-button4{
-
-
-
-color: #F5F5F5;
-
-transform: rotate(-27.47deg);
-}
-
-/* PUNK */
-
-/* .rotate-button5{
-
-color: #F5F5F5;
-
-transform: rotate(-42.15deg);
-
-} */
- 
-
-/* Reggae */
-
-/* .rotate-button6{
-
-color: #F5F5F5;
-
-transform: rotate(-60.97deg);
-} */
-
-
-/* GenreButtons */
-
-
- 
-
-
-/* GenreButtons */
-
-
-
-/* JAZZ */
-
 .rotate-button1{
 position: absolute;
-left: 50%;
+left: 53%;
 top: 5%;
-transform: rotate(45deg);
+transform: rotate(9deg);
 }
 
 /* AMBIENT */
 
 .rotate-button2{
 position: absolute;
-left: 40%;
-top: 25%;
-transform: rotate(30deg);
+left: 53%;
+top: 23%;
+transform: rotate(-5deg);
 }
 
 /* TECHNO */
 .rotate-button3{
 position: absolute;
-left: 33%;
-top: 50%;
-transform: rotate(15deg);
+left: 55%;
+top: 41%;
+transform: rotate(-22deg);
 }
 
 /* METAL */
 .rotate-button4{
 position: absolute;
-left: 33%;
-top: 75%;
-transform: rotate(-15deg);
+left:60%;
+top: 59%;
+transform: rotate(-39deg);
 }
 
 /* PUNK */
 .rotate-button5{
 position: absolute;
-left: 40%;
-top: 95%;
-transform: rotate(-30deg);
+left: 69%;
+top: 73%;
+transform: rotate(-60deg);
 }
 
 /* REGGAE */
 .rotate-button6{
 position: absolute;
-left: 50%;
-top: 100%;
-transform: rotate(-45deg);
+left: 80%;
+top: 82%;
+transform: rotate(-70deg);
 }
 
 .lottie-container{

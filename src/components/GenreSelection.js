@@ -20,9 +20,9 @@ const GenreSelection = () => {
         <>
        <div /* className="lottie-container" */>
                 <Lottie options={defaultOptions} 
-                    style={{ height:"90vh", width:"70vw", display:"flex", flexWrap:"wrap", zIndex:"-999",
+                    style={{ height:"90vh", width:"70vw", display:"flex", flexWrap:"wrap",
                     /* height:"1200px", width:"1200px", */  /* display: "flex", justifyContent: "center",
-  alignItems: "center", *//* position:"absolute", right:"-50%", bottom:"-50%", *//* display:"flex", flexWrap:"wrap",  */ /* marginRight:"-40vw", marginTop:"-50vh", */  paddingLeft:"800px", overflow: "hidden"  }} />  
+  alignItems: "center", */position:"absolute", left:"55%", top:"10%",/* display:"flex", flexWrap:"wrap",  */ /* marginRight:"-40vw", marginTop:"-50vh", */   overflow: "hidden"  }} />  
    <div className="genres-container">
             <GenreControl/>  
             </div>        
