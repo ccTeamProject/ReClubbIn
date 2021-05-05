@@ -1,0 +1,77 @@
+input[type="range"].volume-slider {
+  width: 100%;
+  margin: 8.5px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type="range"].volume-slider:focus {
+  outline: none;
+}
+input[type="range"].volume-slider::-webkit-slider-runnable-track {
+  background: #00f289;
+  border: 0;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+input[type="range"].volume-slider::-webkit-slider-thumb {
+  margin-top: -8.5px;
+  width: 19px;
+  height: 19px;
+  background: #00f289;
+  border: 2px solid #00bc6b;
+  border-radius: 37px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type="range"].volume-slider:focus::-webkit-slider-runnable-track {
+  background: #00f289;
+}
+input[type="range"].volume-slider::-moz-range-track {
+  background: #00f289;
+  border: 0;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+input[type="range"].volume-slider::-moz-range-thumb {
+  width: 19px;
+  height: 19px;
+  background: #00f289;
+  border: 2px solid #00bc6b;
+  border-radius: 37px;
+  cursor: pointer;
+}
+input[type="range"].volume-slider::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 8.5px 0;
+  color: transparent;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+input[type="range"].volume-slider::-ms-fill-lower {
+  background: #00f289;
+  border: 0;
+}
+input[type="range"].volume-slider::-ms-fill-upper {
+  background: #00f289;
+  border: 0;
+}
+input[type="range"].volume-slider::-ms-thumb {
+  width: 19px;
+  height: 19px;
+  background: #00f289;
+  border: 2px solid #00bc6b;
+  border-radius: 37px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type="range"].volume-slider:focus::-ms-fill-lower {
+  background: #00f289;
+}
+input[type="range"].volume-slider:focus::-ms-fill-upper {
+  background: #00f289;
+}
