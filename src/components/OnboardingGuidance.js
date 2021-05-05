@@ -3,22 +3,20 @@ import {NavLink} from 'react-router-dom';
 import "../OnBoardingGuidance.css"
 
 export const OnboardingGuidance = () => {
-    const guideIn = "guide-in";
-    const guideOut = "guide-out";
+
     const guides = [
-        {id:1, text: 'Choose your Stage', url:"/genres", fade:true},
-        {id:2, text: 'Play around', url:"/genres", fade:true},
-        {id:3, text: 'Tap In', url:"/genres", fade:true}
+        {id:1, text: 'Choose your Stage', url:"/genres"},
+        {id:2, text: 'Play around', url:"/genres"},
+        {id:3, text: 'Tap In ->', url:"/genres"}
     ];
 
     const [index, setIndex] = useState(0);
-    const [guideClass, setGuideClass] = useState(true);
-
-        useEffect(() => {
+   
+      useEffect(() => {
           const interval = setInterval(() => {
             if(index<=1){
             setIndex(index + 1);}
-          }, 6000);
+          }, 3000);
           return()=> {
             clearInterval(interval);
          
@@ -26,7 +24,7 @@ export const OnboardingGuidance = () => {
         })
       return(
         <div>
-           {<NavLink to = {guides[index].url} className={guides[index].fade ? guideIn : guideOut }>{guides[index].text}</NavLink>}
+           {<NavLink to = {guides[index].url} className = "guide-in"  /* animation-name = "fadeIn" */>{guides[index].text}</NavLink>}
         </div>   
       )
 };
