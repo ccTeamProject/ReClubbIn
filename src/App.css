@@ -1,10 +1,23 @@
 .App {
-background: rgb(0,0,0);
+/* background: rgb(0,0,0); */
+--gradient: linear-gradient(45deg, #000000, #030039, #220000, #171717);
+  background-image: var(--gradient);
+  background-size: 400%;
+  animation: bg-animation 14s infinite alternate;
   text-align: center;
   min-height: 100vh;
   min-width: 100vw;
 
 }
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

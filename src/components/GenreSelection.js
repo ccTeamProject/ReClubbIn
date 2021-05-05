@@ -17,12 +17,18 @@ const GenreSelection = () => {
 
     
     return (
-        <div>
-            <GenreControl />  
-            <div style={{ zIndex:"-999" }}>
-          <Lottie options={defaultOptions} style={{height:"80vh", width:"60vw", display:"flex", flexWrap:"wrap", zIndex:"-999"  }} />          
-        </div>
-        </div>
+        <>
+       <div /* className="lottie-container" */>
+                <Lottie options={defaultOptions} 
+                    style={{ height:"90vh", width:"70vw", display:"flex", flexWrap:"wrap", zIndex:"-999",
+                    /* height:"1200px", width:"1200px", */  /* display: "flex", justifyContent: "center",
+  alignItems: "center", *//* position:"absolute", right:"-50%", bottom:"-50%", *//* display:"flex", flexWrap:"wrap",  */ /* marginRight:"-40vw", marginTop:"-50vh", */  paddingLeft:"800px", overflow: "hidden"  }} />  
+   <div className="genres-container">
+            <GenreControl/>  
+            </div>        
+          </div>  
+      
+        </>
     )
 }
 
