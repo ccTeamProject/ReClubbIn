@@ -19,9 +19,10 @@ const MusicStream = (props) => {
   const [getStream, setGetStream] = useState([]);
   const songIDs = getStream.map((song) => song.id);
   let newAudioSource = "";
-  if (getStream.length !== 0) {
+
+  const [apiLoaded, setApiLoaded] = useState(false)
+  if (apiLoaded) {
     newAudioSource = `${newApiRoot}tracks/${songIDs[randomSong]}/stream`;
-    console.log(audioElement.volume);
     audioElement.volume = props.volumeState;
   }
 
@@ -29,7 +30,9 @@ const MusicStream = (props) => {
     axios
       .get(`${newApiRoot}tracks/trending?genre=${genre}`)
       .then((response) => response.data)
-      .then((data) => setGetStream(data.data))
+      .then((data) => {
+        setGetStream(data.data);
+        setApiLoaded(true)})
       .catch((err) => {
         console.log(err);
       });
