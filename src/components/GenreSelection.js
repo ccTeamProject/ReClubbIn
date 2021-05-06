@@ -18,7 +18,8 @@ const GenreSelection = () => {
     
     return (
         <>
-       <div /* className="lottie-container" */>
+       <div>
+         <div className="selection-title">ReClubbIn</div>
                 <Lottie options={defaultOptions} 
                     style={{ height:"90vh", width:"70vw", display:"flex", flexWrap:"wrap",
                     /* height:"1200px", width:"1200px", */  /* display: "flex", justifyContent: "center",
