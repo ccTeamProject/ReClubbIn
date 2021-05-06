@@ -92,11 +92,9 @@ a.guide-in{
     0% {opacity:1;}
     100% {opacity:0;}
   }
-/* 
-  guide-visible{
-      opacity: 1;
-  }
 
-  guide-invisible{
-      opacity: 0;
-  } */
+  @media only screen and (max-width: 600px) {
+    a.guide-in{
+      font-size: 1.5em;
+    }
+  }
