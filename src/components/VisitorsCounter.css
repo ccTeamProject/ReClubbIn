@@ -1,9 +1,18 @@
-.visitors-counter p {
-    color: white;
-}
-
 .visitors-counter {
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.visitors-counter .visitors-bg {
+    background: #00bc6b;
+    filter: blur(8px);  
+    height: 20px;
+    width: 80px;
+    position: absolute;  
+}
+
+.visitors-text {
+    z-index: 10;
 }

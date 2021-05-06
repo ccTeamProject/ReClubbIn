@@ -1,7 +1,5 @@
-.guide-button {
+.guide-button a{
     
-    position:absolute;
-    bottom: 20%;
     margin: 1 rem 2rem;
     background-color: cornsilk;
     padding: 1rem 2rem;
@@ -21,41 +19,78 @@
 } 
 
 
-.guide {
+a.guide-in{
+    display: inline-block;
+    font-size: 3rem;
+    color: mediumvioletred;
+    text-decoration: none;
+    animation: fadeIn ease-out 3s;
+    -webkit-animation: fadeIn ease-out 3s;
+    -moz-animation: fadeIn ease-out 3s;
+    -o-animation: fadeIn ease-out 3s;
+    -ms-animation: fadeIn ease-out 3s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100%{opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  a.guide-out{
     display: inline-block;
     font-size: 1rem;
     color: cornsilk;
     text-decoration: none;
-    animation: fadeInOut linear 7s;
-    -webkit-animation: fadeInOut linear 7s;
-    -moz-animation: fadeInOut linear 7s;
-    -o-animation: fadeInOut linear 7s;
-    -ms-animation: fadeInOut linear 7s;
+    animation: fadeOut linear 3;
+    -webkit-animation: fadeOut linear 3s;
+    -moz-animation: fadeOut linear 3s;
+    -o-animation: fadeOut linear 3s;
+    -ms-animation: fadeOut linear 3s;
   }
   
-  @keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
   }
   
-  @-moz-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-moz-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
   }
   
-  @-webkit-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-webkit-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
   }
   
-  @-o-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-o-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
   }
   
-  @-ms-keyframes fadeInOut {
-    0%,100% {opacity:0;}
-    50% {opacity:1;}
+  @-ms-keyframes fadeOut{
+    0% {opacity:1;}
+    100% {opacity:0;}
   }
 /* 
   guide-visible{

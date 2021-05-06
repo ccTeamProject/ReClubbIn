@@ -5,6 +5,8 @@ import "../OnBoardingPage.css"
 import { OnboardingGuidance } from "./OnboardingGuidance";
 
 const OnboardingPage = () => {
+
+
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -14,14 +16,12 @@ const OnboardingPage = () => {
         }
       };
     return (
-        <div className="onboarding-container">
+        <div style={{ zIndex:"-999" }}>
+          <Lottie options={defaultOptions} style={{height:"80vh", width:"60vw", display:"flex", flexWrap:"wrap", zIndex:"-999"  }} />
           <h1>ReClubbIn</h1>
-         
-            <Lottie options={defaultOptions} height={800} width={800} />
-            <OnboardingGuidance />
-            
-            
-
+          <div className="page-bloc">
+          <OnboardingGuidance />
+          </div>
         </div>
     )
 }

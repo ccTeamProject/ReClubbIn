@@ -1,14 +1,161 @@
-.genre-button{
-    background-color: white;
-    border: none;
-    padding: 0.6rem 2rem;
-    margin: 1rem 2rem;
-    border-radius: 0.3rem;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+.genres-bloc{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr)  ;
 }
 
-.genre-button.active{
-background-color: chartreuse;
+.selection-title{
+    color: rgba(255, 255, 255, 0.558);
+    position: absolute;
+    bottom:20%;
+    left: -13%;
+    transform: rotate(-90deg);
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+
 }
 
+.genre-button {
+    position: absolute;
+	background-color:#00f28900;
+	border-radius:10px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	font-family:'Roboto', sans-serif;
+	font-size:28px;
+	padding:1em 2em;
+	text-decoration:none;
+    width: 8em;
+    height: 3em;
+    align-items: center;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.genre-button a{
+    color: mediumvioletred;
+}
+
+/* genreButton
+
+/* JAZZ */
+.rotate-button1{
+position: absolute;
+left: 53%;
+top: 5%;
+transform: rotate(9deg);
+}
+
+
+
+/* AMBIENT */
+
+.rotate-button2{
+position: absolute;
+left: 53%;
+top: 23%;
+transform: rotate(-5deg);
+}
+
+/* TECHNO */
+.rotate-button3{
+position: absolute;
+left: 55%;
+top: 41%;
+transform: rotate(-22deg);
+}
+
+/* METAL */
+.rotate-button4{
+position: absolute;
+left:60%;
+top: 59%;
+transform: rotate(-39deg);
+}
+
+/* PUNK */
+.rotate-button5{
+position: absolute;
+left: 69%;
+top: 73%;
+transform: rotate(-60deg);
+}
+
+/* REGGAE */
+.rotate-button6{
+position: absolute;
+left: 80%;
+top: 82%;
+transform: rotate(-70deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .genre-button{
+        font-size:21px;
+        border:none}
+
+
+        /* JAZZ */
+.rotate-button1{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    transform: rotate(80deg);
+    }
+    
+    /* AMBIENT */
+    
+    .rotate-button2{
+    position: absolute;
+    left: 30%;
+    top: 18%;
+    transform: rotate(40deg);
+    }
+    
+    /* TECHNO */
+    .rotate-button3{
+    position: absolute;
+    left: 20%;
+    top: 34%;
+    transform: rotate(5deg);
+    }
+    
+    /* METAL */
+    .rotate-button4{
+    position: absolute;
+    left:22%;
+    top: 50%;
+    transform: rotate(-25deg);
+    }
+    
+    /* PUNK */
+    .rotate-button5{
+    position: absolute;
+    left: 35%;
+    top: 63%;
+    transform: rotate(-50deg);
+    }
+    
+    /* REGGAE */
+    .rotate-button6{
+    position: absolute;
+    left: 61%;
+    top: 69%;
+    transform: rotate(-80deg);
+    }
+
+    .selection-title{
+        
+        position: absolute;
+        bottom:19%;
+        left: -27%;
+        font-size: 60px;
+       
+    
+    }
+    
+  }
+
+  

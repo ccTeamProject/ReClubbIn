@@ -11,10 +11,8 @@ const VisitorsCounter = () => {
 
     return (
         <div className='visitors-counter'>
-            <p>There are
-                <div>{randomVisitors} </div>
-                with you in this room
-            </p>
+                <div className='visitors-bg'></div>
+                <div className='visitors-text'>{randomVisitors} 💃🕺 </div>
         </div>
     );
 };

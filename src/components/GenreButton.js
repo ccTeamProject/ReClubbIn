@@ -10,13 +10,14 @@ function GenreButton(props) {
   const link = `/genres/${props.musicButtonTitle}`
 
   return <button
-   className="genre-button"
+   className={props.musicButtonClass}
 
    >
     <NavLink to={link}>
        {props.musicButtonTitle}
     </NavLink>
-   </button>;
+   </button>
+   
 
 }
 
