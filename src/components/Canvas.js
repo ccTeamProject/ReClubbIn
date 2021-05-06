@@ -3,6 +3,7 @@ import CanvasContent from "./CanvasContent";
 import CanvasHeader from "./CanvasHeader";
 import CanvasFooter from "./CanvasFooter";
 import "./CanvasFooter.css";
+import "../CanvasContainer.css";
 
 const Canvas = (props) => {
   const params = props.match.params;

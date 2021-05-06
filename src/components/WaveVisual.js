@@ -23,9 +23,13 @@ const WaveVisual = ({audioRef, canvasRef}) => {
             analyser.getByteFrequencyData(freqData)
             ctx.clearRect(0, 0, canvas.width, canvas.height)
             /* console.log(freqData) */
-            ctx.fillStyle = '#9933ff';
             let bars = 100;
             for (var i = 0; i < bars; i++) {
+                let my_gradient = ctx.createLinearGradient(0, 0, 0, 170);
+                my_gradient.addColorStop(0, "#00bc6b");
+                my_gradient.addColorStop(0.2, "#00bc6b"); 
+                my_gradient.addColorStop(1, "mediumvioletred");        
+                ctx.fillStyle = my_gradient;
                 let bar_x = i * 3;
                 let bar_width = 2;
                 let bar_height = -(freqData[i] / 2);
