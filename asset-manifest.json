@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ReClubbIn/static/css/main.c222765e.chunk.css",
+    "main.css": "/ReClubbIn/static/css/main.21b54cda.chunk.css",
     "main.js": "/ReClubbIn/static/js/main.49a819cf.chunk.js",
     "main.js.map": "/ReClubbIn/static/js/main.49a819cf.chunk.js.map",
     "runtime-main.js": "/ReClubbIn/static/js/runtime-main.8cef6c46.js",
@@ -10,13 +10,13 @@
     "static/js/3.98a50112.chunk.js": "/ReClubbIn/static/js/3.98a50112.chunk.js",
     "static/js/3.98a50112.chunk.js.map": "/ReClubbIn/static/js/3.98a50112.chunk.js.map",
     "index.html": "/ReClubbIn/index.html",
-    "static/css/main.c222765e.chunk.css.map": "/ReClubbIn/static/css/main.c222765e.chunk.css.map",
+    "static/css/main.21b54cda.chunk.css.map": "/ReClubbIn/static/css/main.21b54cda.chunk.css.map",
     "static/js/2.accf4494.chunk.js.LICENSE.txt": "/ReClubbIn/static/js/2.accf4494.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8cef6c46.js",
     "static/js/2.accf4494.chunk.js",
-    "static/css/main.c222765e.chunk.css",
+    "static/css/main.21b54cda.chunk.css",
     "static/js/main.49a819cf.chunk.js"
   ]
 }
